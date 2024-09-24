@@ -323,11 +323,11 @@ const Resume = () => {
                     }
 
                     return (
-                      <li key={index}>
+                      <li key={index} className="lg:mb-6 lg:mx-4">
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-[190px] h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-5xl text-white group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-[180px] h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group mb-6 p-4">
+                              <div className="text-5xl text-white group-hover:text-accent transition-all duration-300 ">
                                 <IconComponent />
                               </div>
                             </TooltipTrigger>
