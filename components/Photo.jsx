@@ -47,11 +47,11 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[100px] h-[100px] xl:w-[506px] xl:h-[506px] rounded-full overflow-hidden flex justify-center items-center"
+          className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] xl:w-[506px] xl:h-[506px] rounded-full overflow-hidden flex justify-center items-center"
         >
           <Image
             src="/assets/Alwin-fotor-ai-art-effects-20241002173518-Photoroom.png"
-            priority //Alwin-fotor-ai-art-effects-20241002173518.jpg
+            priority
             quality={100}
             width={506}
             height={506}
