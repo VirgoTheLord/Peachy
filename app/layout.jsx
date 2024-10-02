@@ -1,4 +1,4 @@
-import { Protest_Guerrilla, JetBrains_Mono } from "next/font/google";
+import { Protest_Guerrilla, JetBrains_Mono, Permanent_Marker } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import PageTransition from "@/components/ui/PageTransition";
@@ -9,6 +9,12 @@ const jetbrainsMono = Protest_Guerrilla({
   weight: ["400"],
   variable: "--font-protestguerilla",
 });
+
+const dancing = Permanent_Marker({
+  subsets: ["latin"],
+  weight: ['400'],
+  variable: "--font-dancingscript"
+})
 
 const jetbrainsMono1 = JetBrains_Mono({
   subsets: ["latin"],
@@ -25,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.variable} ${jetbrainsMono1.variable} antialiased`}
+        className={`${jetbrainsMono.variable} ${jetbrainsMono1.variable} ${dancing.variable} antialiased`}
       >
         <Header />
         <StairTransition />

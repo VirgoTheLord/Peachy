@@ -22,6 +22,7 @@ module.exports = {
     fontFamily: {
       secondary: "var(--font-protestguerilla)",
       primary: "var(--font-jetbrainsmono)",
+      tertiary: "var(--font-dancingscript)",
     },
     extend: {
       colors: {

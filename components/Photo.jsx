@@ -5,35 +5,18 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative flex justify-center items-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
           transition: { delay: 2, duration: 0.4, ease: "easeIn" },
         }}
+        className="relative"
       >
-        {/* Image */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
-          }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
-        >
-          <Image
-            src="/assets/Al.png"
-            priority
-            quality={100}
-            fill
-            alt=""
-            className="object-contain justify-center items-center "
-          />
-        </motion.div>
         {/* Circle */}
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
+          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] absolute"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +40,25 @@ const Photo = () => {
             }}
           />
         </motion.svg>
+        {/* Image */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
+          }}
+          className="w-[100px] h-[100px] xl:w-[506px] xl:h-[506px] rounded-full overflow-hidden flex justify-center items-center"
+        >
+          <Image
+            src="/assets/Alwin-fotor-ai-art-effects-20241002173518-Photoroom.png"
+            priority //Alwin-fotor-ai-art-effects-20241002173518.jpg
+            quality={100}
+            width={506}
+            height={506}
+            alt=""
+            className="object-cover"
+          />
+        </motion.div>
       </motion.div>
     </div>
   );
