@@ -19,34 +19,33 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Frontend",
+    category: "Modern DevFolio",
     title: "project 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    description: "The portfolio, developed using Next.js, TypeScript, and Tailwind CSS, effectively showcases projects and skills with a sleek and responsive design. It adapts seamlessly to various devices, ensuring an optimal viewing experience. By incorporating TypeScript, the code's reliability and maintainability are enhanced, while Next.js facilitates smooth navigation through dynamically routed project pages.",
+    stack: [{ name: "Next.Js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }],
+    image: "/assets/work/devfolio.png",
+    live: "https://best-dev-portfolio.vercel.app",
+    github: "https://github.com/VirgoTheLord/Best-Dev-Portfolio",
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "Gen-AI",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
-    stack: [{ name: "Next.JS" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
+      "The generative AI resume processor app, built with Python and Tkinter, provides a streamlined solution for analyzing and enhancing resumes. The user-friendly graphical interface allows individuals to easily upload and manage their resumes, ensuring accessibility for users of all technical backgrounds.",
+    stack: [{ name: "Tkinter" }, { name: "Python" }, { name: "Tensorflow" }],
+    image: "/assets/work/res.jpg",
     live: "",
-    github: "",
+    github: "https://github.com/VirgoTheLord/Gen-AI-Resume-Processor",
   },
   {
     num: "03",
-    category: "Gen-AI",
+    category: "Will be Updated soon...",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
-    stack: [{ name: "Tkinter" }, { name: "Python" }, { name: "Tensorflow" }],
-    image: "/assets/work/thumb3.png",
+      "Currenty working on a project that will be updated soon...",
+    stack: [{ name: "Next.JS" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
+    image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
@@ -138,11 +137,11 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] w-[550px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay*/}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 w-[550px] h-full bg-black/10 z-10"></div>
                       {/* image */}
-                      <div className="relative w-full h-full">
+                      <div className="relative w-[550px] h-full">
                         <Image
                           src={project.image}
                           fill
