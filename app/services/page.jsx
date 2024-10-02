@@ -9,7 +9,7 @@ const services = [
     num: "01",
     title: "Web Development",
     description: "Lesgo",
-    href: "",
+    href: "https://github.com/VirgoTheLord/PrimeDev",
   },
   {
     num: "02",
@@ -27,7 +27,7 @@ const services = [
     num: "04",
     title: "Gen-AI and Prompt Engineering",
     description: "Lesgo",
-    href: "",
+    href: "https://github.com/VirgoTheLord/Gen-AI-Resume-Processor",
   },
 ];
 

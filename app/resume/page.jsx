@@ -37,7 +37,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ years",
+      fieldValue: "1 years",
     },
     {
       fieldName: "Instagram",
@@ -70,29 +70,29 @@ const experience = {
       duration: "June 2024- July-2024",
     },
     {
-      company: "Nest Digital",
-      position: "Gen-AI intern",
-      duration: "June 2024- July-2024",
+      company: "Soon......",
+      position: "To be Updated",
+      duration: "",
     },
     {
-      company: "Nest Digital",
-      position: "Gen-AI intern",
-      duration: "June 2024- July-2024",
+      company: "Soon......",
+      position: "To be Updated",
+      duration: "",
     },
     {
-      company: "Nest Digital",
-      position: "Gen-AI intern",
-      duration: "June 2024- July-2024",
+      company: "Soon......",
+      position: "To be Updated",
+      duration: "",
     },
     {
-      company: "Nest Digital",
-      position: "Gen-AI intern",
-      duration: "June 2024- July-2024",
+      company: "Soon......",
+      position: "To be Updated",
+      duration: "",
     },
     {
-      company: "Nest Digital",
-      position: "Gen-AI intern",
-      duration: "June 2024- July-2024",
+      company: "Soon......",
+      position: "To be Updated",
+      duration: "",
     },
   ],
 };
@@ -104,9 +104,14 @@ const education = {
     "I have worked with a variety of companies and clients to create websites and web applications. Here are some of the projects that I have worked on:",
   items: [
     {
-      institution: "TENS, Sharjah",
-      degree: "Primary Education",
-      duration: "2009-2020",
+      institution: "MITS, Varikoli",
+      degree: "B.Tech in Computer Science",
+      duration: "2022-present",
+    },
+    {
+      institution: "Chavara Public School, Pala",
+      degree: "Higher Secondary",
+      duration: "2020-2022",
     },
     {
       institution: "TENS, Sharjah",
@@ -114,30 +119,27 @@ const education = {
       duration: "2009-2020",
     },
     {
-      institution: "TENS, Sharjah",
-      degree: "Primary Education",
-      duration: "2009-2020",
+      institution: "Soon......",
+      degree: "To Be Updated",
+      duration: "",
     },
     {
-      institution: "TENS, Sharjah",
-      degree: "Primary Education",
-      duration: "2009-2020",
+      institution: "Soon......",
+      degree: "To Be Updated",
+      duration: "",
     },
     {
-      institution: "TENS, Sharjah",
-      degree: "Primary Education",
-      duration: "2009-2020",
+      institution: "Soon......",
+      degree: "To Be Updated",
+      duration: "",
     },
     {
-      institution: "TENS, Sharjah",
-      degree: "Primary Education",
-      duration: "2009-2020",
+      institution: "Soon......",
+      degree: "To Be Updated",
+      duration: "",
     },
-    {
-      institution: "TENS, Sharjah",
-      degree: "Primary Education",
-      duration: "2009-2020",
-    },
+  
+    
   ],
 };
 
@@ -203,7 +205,7 @@ const Resume = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 mb-10"
     >
       <div className="container mx-auto">
         <Tabs
@@ -314,20 +316,20 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4 xl:gap-[20px] sm:gap-[20px] sm:px-16">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                   {skills.items.map((item, index) => {
-                    const IconComponent = iconMapping[item.iconName]
+                    const IconComponent = iconMapping[item.iconName];
                     if (!IconComponent) {
                       console.warn(`No icon found for ${item.iconName}`);
                       return null; // Or render a placeholder
                     }
 
                     return (
-                      <li key={index} className="lg:mb-6 lg:mx-4">
+                      <li key={index} className="flex justify-center">
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-[180px] h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group mb-6 p-4">
-                              <div className="text-5xl text-white group-hover:text-accent transition-all duration-300 ">
+                            <TooltipTrigger className="w-[180px] h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group p-4">
+                              <div className="text-5xl text-white group-hover:text-accent transition-all duration-300">
                                 <IconComponent />
                               </div>
                             </TooltipTrigger>
