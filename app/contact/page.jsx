@@ -96,7 +96,7 @@ const Contact = () => {
               <p>
                 Are you ready to bring your ideas to life? Whether you&apos;re
                 looking to develop a stunning website, create a powerful
-                application, or enhance your digital presence, I'm here to help!
+                application, or enhance your digital presence, I&apos;m here to help!
               </p>
               <p>
                 Let&apos;s connect and explore how we can turn your vision into
