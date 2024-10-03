@@ -100,8 +100,7 @@ const experience = {
 const education = {
   icons: "/assets/resume/cap.svg",
   title: "My Education",
-  description:
-    "I have worked with a variety of companies and clients to create websites and web applications. Here are some of the projects that I have worked on:",
+  description:"I have pursued a comprehensive education in Computer Science, starting with my Bachelor's degree at MITS, Varikoli, where I am currently enrolled. Prior to this, I completed my Higher Secondary education at Chavara Public School, Pala, where I developed a strong foundation in various subjects, particularly in science and mathematics.",
   items: [
     {
       institution: "MITS, Varikoli",
